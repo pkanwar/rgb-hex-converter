@@ -24,8 +24,18 @@ body {
   flex-wrap: wrap;
   justify-content: center;
 }
-    
-      /* navbar styling */
+
+@media screen and (max-width: 900px) {
+  .container {
+    margin-top: 80px; 
+    width: 737px;
+    height: 550px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
       
 .navbar {
   position: fixed;
@@ -37,12 +47,31 @@ body {
   transition: all 0.3s ease;
   height: 90px;
 }
-      
+
+@media screen and (max-width: 900px) {
+  .navbar {
+    position: fixed;
+    width: 100%;
+    padding: 15px 15px;
+    z-index: 999;
+    background-color: #2F4F4F;
+    font-family: 'Poppins' sans-serif;
+    transition: all 0.3s ease;
+    height: 60px;
+  }
+}
+
 .navbar .max-width {
   display: flex;
   align-items: center;
   justify-content: space-between;
   margin-right: 25px;
+}
+
+@media screen and (max-width: 900px) {
+  .navbar .max-width {
+    margin-right: 17px;
+  }
 }
       
 #menu1 {
@@ -50,6 +79,13 @@ body {
   font-size: 18px;
   border: 0px;
   float: right;
+}
+
+@media screen and (max-width: 900px) {
+  #menu1 {
+    font-size: 16px;
+    border: 0px;
+  }
 }
   
 .home {
@@ -65,11 +101,29 @@ body {
   box-shadow: 3px 3px 3px 3px #2F4F4F;
 }
 
+@media screen and (max-width: 900px) {
+  .home {
+    margin-top: 14px;
+    width: 667px;
+    height: 250px;
+    background-color: #F5F5F5;
+    border-radius: 10px;
+    box-shadow: 2px 2px 2px 2px #2F4F4F;
+  }
+}
+
 .button {
   margin: 30px 300px 10px 60px;
   width: 870px;
 }
-  
+
+@media screen and (max-width: 900px) {
+  .button {
+    margin: 20px 200px 8px 40px;
+    width: 580px;
+  }
+}
+
 #clearBtn {
   float: right;
 } 
@@ -83,6 +137,14 @@ body {
   color: #2F4F4F;
   margin-top: 0px;
 } 
+
+@media screen and (max-width: 900px) {
+  .home .title {
+    font-size: 20px;
+    font-weight: 600;
+    color: #2F4F4F;
+  } 
+}
   
 .home textarea {
   border: 0px;
@@ -97,6 +159,16 @@ body {
   margin-left: 50px;
   width: 900px;
 }
+
+@media screen and (max-width: 900px) {
+  .home label {
+    font-size: 14px;
+    font-weight: 600;
+    color: #2F4F4F;
+    margin-left: 35px;
+    width: 600px;
+  }
+}
   
 #hexColorInput {
   width: 900px;
@@ -105,6 +177,21 @@ body {
   color: #2F4F4F;
   font-weight: 700;
   margin: 0 auto;
+  padding-top: 3px;
+  padding-left: 10px;
+}
+
+@media screen and (max-width: 900px) {
+  #hexColorInput {
+    width: 600px;
+    height: 30px;
+    border: 1px solid #008B8B;
+    color: #2F4F4F;
+    font-weight: 600;
+    margin: 0 auto;
+    padding-top: 3px;
+    padding-left: 10px;
+  }
 }
     
 #hexColorInput:focus {
@@ -125,6 +212,18 @@ body {
   display: none;
 }
     
+@media screen and (max-width: 900px) {
+  .outputSection {
+    border: 2px solid black;
+    width: 667px;
+    height: 150px;
+    border: 2px solid #008B8B;
+    border-radius: 10px;
+    box-shadow: 2px 2px 2px 2px #2F4F4F;
+    display: none;
+  }
+}
+
 .outputSection .title {
   position: relative;
   text-align: center;
@@ -133,6 +232,15 @@ body {
   font-weight: 800;
   color: #2F4F4F;
   margin-top: 20px;
+}
+
+@media screen and (max-width: 900px) {
+  .outputSection .title {
+    font-size: 25px;
+    font-weight: 535;
+    color: #2F4F4F;
+    margin-top: 15px;
+  }
 }
   
 .outputBox {
@@ -145,6 +253,13 @@ body {
   width: 200px;
   height: 60px;
 }
+
+@media screen and (max-width: 900px) {
+  #hexToRgbOutput {
+    width: 135px;
+    height: 60px;
+  }
+}
   
 .rgbTitle {
   position: relative;
@@ -154,6 +269,18 @@ body {
   color: #2F4F4F;
   margin-right: 20px;
   margin-top: 10px;
+}
+
+@media screen and (max-width: 900px) {
+  .rgbTitle {
+    position: relative;
+    font-size: 25px;
+    font-family: 'Poppins' sans-serif;
+    font-weight: 550;
+    color: #2F4F4F;
+    margin-right: 14px;
+    margin-top: 8px;
+  }
 }
   
 .rgbHexSection {
@@ -170,6 +297,17 @@ body {
   padding: 15px;
 }
   
+@media screen and (max-width: 900px) {
+  .rgbHexSection {
+    width: 667px;
+    height: 200px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 2px 2px #2F4F4F;
+    display: block;
+    padding: 10px;
+  }
+}
+
 .rgbHexSection p {
   color: #2F4F4F;
   font-weight: 600;
@@ -177,6 +315,13 @@ body {
   flex-direction: column;
   justify-content: center;
   margin-left: 10px;
+}
+
+@media screen and (max-width: 900px) {
+  .rgbHexSection p {
+    font-weight: 500;
+    margin-left: 8px;
+  }
 }
   
 .rgbHexSection .title {
@@ -189,3 +334,11 @@ body {
   margin-top: 20px;
 }
     
+@media screen and (max-width: 900px) {
+  .rgbHexSection .title {
+    font-size: 20px;
+    font-weight: 535;
+    color: #2F4F4F;
+    margin-top: 15px;
+  }
+}
