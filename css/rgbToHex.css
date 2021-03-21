@@ -318,9 +318,9 @@ body {
   .outputSection .title {
     position: relative;
     text-align: center;
-    font-size: 20px;
+    font-size: 25px;
     font-family: 'Poppins' sans-serif;
-    font-weight: 470;
+    font-weight: 600;
     color: #2F4F4F;
     margin-top: 16px;
   }
@@ -356,7 +356,7 @@ body {
 
 @media screen and (max-width: 900px) {
   .hexTitle {
-    font-size: 17px;
+    font-size: 22px;
     font-weight: 467;
     color: #2F4F4F;
     margin-right: 14px;
